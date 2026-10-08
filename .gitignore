@@ -1,0 +1,17 @@
+# dependencies
+node_modules
+
+# ค่าลับ — ห้าม commit (commit ได้เฉพาะ .env.example และ frontend/.env.production)
+.env
+.env.local
+*.local
+
+# build output / รายงาน test — สร้างใหม่ได้ทุกครั้ง
+frontend/dist/
+coverage/
+
+# ฐานข้อมูล — สร้างใหม่จาก api/data/schema.sql ได้เสมอ (npm run db:setup)
+*.db
+
+.DS_Store
+*.log

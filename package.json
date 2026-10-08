@@ -1,0 +1,14 @@
+{
+  "name": "faculty-news",
+  "private": true,
+  "description": "ENGSE203 Final Part 1 (ชุด B) — ระบบประกาศข่าวคณะ",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "build": "npm install --include=dev --prefix frontend && npm run build --prefix frontend && npm install --prefix api",
+    "start": "npm start --prefix api",
+    "test": "npm test --prefix api && npm test --prefix frontend",
+    "coverage": "npm run coverage --prefix api"
+  }
+}
